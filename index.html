@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* RESET & BASIC SETUP */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body, html {
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            overflow: hidden; /* Prevents scrolling if not needed */
+        }
+
+        /* BACKGROUND IMAGE CONFIGURATION */
+        .background {
+            /* REPLACE 'background.jpg' LATER WITH YOUR OWN IMAGE URL */
+            background-image: url('background.jpg'); 
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+
+        /* DARK OVERLAY (Makes text easier to read) */
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Adjust 0.3 to make it darker/lighter */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* GLASS CONTAINER */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px); /* The frosted glass effect */
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 40px 60px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            max-width: 90%;
+            width: 500px;
+        }
+
+        /* TEXT STYLING */
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #fff;
+            font-size: 4rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        p {
+            color: #eee;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+
+        /* LINKS CONTAINER */
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* BUTTON STYLING */
+        .nav-link {
+            text-decoration: none;
+            color: #fff;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px 20px;
+            border-radius: 50px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-link:hover {
+            background: #fff;
+            color: #333;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* ICONS (Using generic text icons, you can swap for SVGs) */
+        .icon {
+            font-size: 1.2rem;
+        }
+
+        /* MOBILE RESPONSIVENESS */
+        @media (max-width: 600px) {
+            h1 { font-size: 3rem; }
+            .glass-card { padding: 30px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="background">
+        <div class="overlay">
+            <div class="glass-card">
+                <h1>Us Together</h1>
+                <p>Our memories, our plans, our life.</p>
+
+                <div class="links-container">
+                    
+                    <a href="https://share.samsungcloud.com/sharedalbum/NCm0e2PaYB" class="nav-link" target="_blank">
+                        <span class="icon">📷</span> Gallery
+                    </a>
+
+                    <a href="https://groupshare.samsungcloud.com/invitation/notecoedit/knWR6YC4Dk" class="nav-link" target="_blank">
+                        <span class="icon">📖</span> Diary
+                    </a>
+
+                    <a href="https://www.notion.so/Maryam-Kiarash-Weekly-Planner-1e95cdcc8ac180e6ac0feca31fc62377?source=copy_link" class="nav-link" target="_blank">
+                        <span class="icon">📅</span> Planner
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
